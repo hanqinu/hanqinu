@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/docs/img/userHead.png">
-  <link rel="icon" href="/docs/img/userHead.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/userHead.png">
+  <link rel="icon" href="/img/userHead.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="一、常用 Composition API1. setupsetup 是 Vue3.0 中一个新的配置项，值为一个函数，是所有 Composition API 的入口 两个注意点：  1.setup 执行的时机：在 beforeCreate 之前执行一次，this 是 undefined 2.setup 的参数： props：值为对象，包含组件外部传递过来，且组件内部声明接收了的属性 content">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue3新特性">
-<meta property="og:url" content="https://hanqinu.github.io/docs/2022/03/03/vue3%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
+<meta property="og:url" content="https://hanqinu.github.io/2022/03/03/vue3%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
 <meta property="og:site_name" content="寒沁">
 <meta property="og:description" content="一、常用 Composition API1. setupsetup 是 Vue3.0 中一个新的配置项，值为一个函数，是所有 Composition API 的入口 两个注意点：  1.setup 执行的时机：在 beforeCreate 之前执行一次，this 是 undefined 2.setup 的参数： props：值为对象，包含组件外部传递过来，且组件内部声明接收了的属性 content">
 <meta property="og:locale" content="zh_CN">
@@ -63,12 +63,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/docs/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/docs/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/docs/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -77,15 +77,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"hanqinu.github.io","root":"/docs/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/docs/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"hanqinu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/docs/js/utils.js" ></script>
-  <script  src="/docs/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -102,7 +102,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/docs/">
+    <a class="navbar-brand" href="/">
       <strong>blogs</strong>
     </a>
 
@@ -121,7 +121,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -133,7 +133,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/archives/" target="_self">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -145,7 +145,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/categories/" target="_self">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -157,7 +157,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/tags/" target="_self">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -169,7 +169,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -199,7 +199,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/docs/img/postBg.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/postBg.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -363,7 +363,7 @@
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// watchEffect所指定的回调中用到的数据只要发生变化，则直接重新执行回调。</span><br><span class="hljs-title function_">watchEffect</span>(<span class="hljs-function">()=&gt;</span>&#123;<br>    <span class="hljs-keyword">const</span> x1 = sum.<span class="hljs-property">value</span><br>    <span class="hljs-keyword">const</span> x2 = person.<span class="hljs-property">age</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;watchEffect配置的回调执行了&#x27;</span>)<br>&#125;)<br></code></pre></td></tr></table></figure>
 
-<h4 id="4-生命周期"><a href="#4-生命周期" class="headerlink" title="4. 生命周期"></a>4. 生命周期</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/vue3%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" srcset="/docs/img/loading.gif" lazyload alt="vue3生命周期"></p>
+<h4 id="4-生命周期"><a href="#4-生命周期" class="headerlink" title="4. 生命周期"></a>4. 生命周期</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/vue3%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" srcset="/img/loading.gif" lazyload alt="vue3生命周期"></p>
 <ul>
 <li><p>vue3 中可以继续使用 vue2 中的生命周期钩子，但是有两个被更名</p>
 <ul>
@@ -386,7 +386,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/vue2%E5%92%8Cvue3%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%AF%B9%E6%AF%94.png" srcset="/docs/img/loading.gif" lazyload alt="vue2和vue3生命周期钩子对比"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/vue2%E5%92%8Cvue3%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%AF%B9%E6%AF%94.png" srcset="/img/loading.gif" lazyload alt="vue2和vue3生命周期钩子对比"></p>
 <h4 id="5-自定义-hook-函数"><a href="#5-自定义-hook-函数" class="headerlink" title="5. 自定义 hook 函数"></a>5. 自定义 hook 函数</h4><ul>
 <li><p>hook 本质是使用 vue3 的组合 API 封装的可复用的功能函数</p>
 </li>
@@ -446,7 +446,7 @@
 <h4 id="5-provide-与-inject"><a href="#5-provide-与-inject" class="headerlink" title="5. provide 与 inject"></a>5. provide 与 inject</h4><ul>
 <li>作用：实现祖与后代组件之间的通信。父组件有一个 provide 选项来提供数据，后代组件有一个 inject 选项来使用这些数据</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/provide%E5%92%8Cinject.png" srcset="/docs/img/loading.gif" lazyload alt="provide和inject"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/provide%E5%92%8Cinject.png" srcset="/img/loading.gif" lazyload alt="provide和inject"></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 祖组件</span><br><span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">let</span> car = <span class="hljs-title function_">reactive</span>(&#123;<span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;奔驰&#x27;</span>, <span class="hljs-attr">price</span>: <span class="hljs-string">&#x27;40万&#x27;</span>&#125;)<br>    <span class="hljs-title function_">provide</span>(<span class="hljs-string">&#x27;car&#x27;</span>, car)<br>&#125;<br><br><span class="hljs-comment">// 后代组件</span><br><span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">const</span> car = <span class="hljs-title function_">inject</span>(<span class="hljs-string">&#x27;car&#x27;</span>)<br>    <span class="hljs-keyword">return</span> &#123; car &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h4 id="6-响应式数据的判断"><a href="#6-响应式数据的判断" class="headerlink" title="6. 响应式数据的判断"></a>6. 响应式数据的判断</h4><ul>
@@ -526,7 +526,7 @@
 <li>componentUpdated：指令所在组件的 VNode 及其子 VNode 全部更新后调用。</li>
 <li>unbind：只调用一次，指令与元素解绑时调用。</li>
 </ul>
-<p><strong>vue2和vue3自定义指令钩子对比：</strong><br><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/vue2%E5%92%8Cvue3%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4%E9%92%A9%E5%AD%90%E5%AF%B9%E6%AF%94.png" srcset="/docs/img/loading.gif" lazyload alt="vue2和vue3自定义指令钩子对比"></p>
+<p><strong>vue2和vue3自定义指令钩子对比：</strong><br><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vue3%E6%96%B0%E7%89%B9%E6%80%A7/vue2%E5%92%8Cvue3%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4%E9%92%A9%E5%AD%90%E5%AF%B9%E6%AF%94.png" srcset="/img/loading.gif" lazyload alt="vue2和vue3自定义指令钩子对比"></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// vue2 注册一个全局自定义指令 v-focus</span><br><span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">directive</span>(<span class="hljs-string">&#x27;focus&#x27;</span>, &#123; <br>    <span class="hljs-comment">// 当被绑定的元素插入到 DOM 中时</span><br>    <span class="hljs-attr">inserted</span>: <span class="hljs-keyword">function</span> (<span class="hljs-params">el</span>) &#123; <br>        <span class="hljs-comment">// 聚焦元素 </span><br>        el.<span class="hljs-title function_">focus</span>() <br>    &#125; <br>&#125;)<br><br><span class="hljs-comment">// vue3 注册一个全局自定义指令 v-focus</span><br><span class="hljs-keyword">const</span> &#123; createApp &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span><br><span class="hljs-keyword">const</span> app = <span class="hljs-title function_">createApp</span>(&#123;&#125;) <br>app.<span class="hljs-title function_">directive</span>(<span class="hljs-string">&#x27;focus&#x27;</span>, &#123; <br>    <span class="hljs-title function_">mounted</span>(<span class="hljs-params">el</span>) &#123; <br>        el.<span class="hljs-title function_">focus</span>()<br>    &#125; <br>&#125;)<br></code></pre></td></tr></table></figure>
 
 <h4 id="3-v-model"><a href="#3-v-model" class="headerlink" title="3. v-model"></a>3. v-model</h4><ul>
@@ -599,7 +599,7 @@
     
       <span class="category-chain">
         
-  <a href="/docs/categories/vue/" class="category-chain-item">vue</a>
+  <a href="/categories/vue/" class="category-chain-item">vue</a>
   
   
 
@@ -614,7 +614,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/docs/tags/vue3/" class="print-no-link">#vue3</a>
+        <a href="/tags/vue3/" class="print-no-link">#vue3</a>
       
     </div>
   
@@ -627,7 +627,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>vue3新特性</div>
-      <div>https://hanqinu.github.io/docs/2022/03/03/vue3新特性/</div>
+      <div>https://hanqinu.github.io/2022/03/03/vue3新特性/</div>
     </div>
     <div class="license-meta">
       
@@ -675,7 +675,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/docs/2022/02/24/this%E6%8C%87%E5%90%91/" title="this指向">
+                      <a href="/2022/02/24/this%E6%8C%87%E5%90%91/" title="this指向">
                         <span class="hidden-mobile">this指向</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -804,8 +804,8 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/docs/js/events.js" ></script>
-<script  src="/docs/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
@@ -827,7 +827,7 @@
 
 
   
-    <script  src="/docs/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -926,7 +926,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/docs/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -934,7 +934,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/docs/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   

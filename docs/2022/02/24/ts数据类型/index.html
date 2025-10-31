@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/docs/img/userHead.png">
-  <link rel="icon" href="/docs/img/userHead.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/userHead.png">
+  <link rel="icon" href="/img/userHead.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="1. number 所有数字都是浮点数，类型为 number，支持二进制、八进制、十进制和十六进制  12345678&#x2F;&#x2F; 十进制let decimal: number &#x3D; 6;&#x2F;&#x2F; 十六进制let hex: number &#x3D; 0xf00d;&#x2F;&#x2F; 二进制let binary: number &#x3D; 0b1010;&#x2F;&#x2F; 八进制let octal: number &#x3D; 0o744;  2. string12">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ts数据类型">
-<meta property="og:url" content="https://hanqinu.github.io/docs/2022/02/24/ts%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
+<meta property="og:url" content="https://hanqinu.github.io/2022/02/24/ts%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="寒沁">
 <meta property="og:description" content="1. number 所有数字都是浮点数，类型为 number，支持二进制、八进制、十进制和十六进制  12345678&#x2F;&#x2F; 十进制let decimal: number &#x3D; 6;&#x2F;&#x2F; 十六进制let hex: number &#x3D; 0xf00d;&#x2F;&#x2F; 二进制let binary: number &#x3D; 0b1010;&#x2F;&#x2F; 八进制let octal: number &#x3D; 0o744;  2. string12">
 <meta property="og:locale" content="zh_CN">
@@ -57,12 +57,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/docs/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/docs/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/docs/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -71,15 +71,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"hanqinu.github.io","root":"/docs/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/docs/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"hanqinu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/docs/js/utils.js" ></script>
-  <script  src="/docs/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -96,7 +96,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/docs/">
+    <a class="navbar-brand" href="/">
       <strong>blogs</strong>
     </a>
 
@@ -115,7 +115,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -127,7 +127,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/archives/" target="_self">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -139,7 +139,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/categories/" target="_self">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -151,7 +151,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/tags/" target="_self">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -163,7 +163,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -193,7 +193,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/docs/img/postBg.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/postBg.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -395,7 +395,7 @@
     
       <span class="category-chain">
         
-  <a href="/docs/categories/ts/" class="category-chain-item">ts</a>
+  <a href="/categories/ts/" class="category-chain-item">ts</a>
   
   
 
@@ -416,7 +416,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>ts数据类型</div>
-      <div>https://hanqinu.github.io/docs/2022/02/24/ts数据类型/</div>
+      <div>https://hanqinu.github.io/2022/02/24/ts数据类型/</div>
     </div>
     <div class="license-meta">
       
@@ -460,7 +460,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/docs/2022/02/24/webpack%E6%89%93%E5%8C%85ts/" title="webpack打包ts">
+                      <a href="/2022/02/24/webpack%E6%89%93%E5%8C%85ts/" title="webpack打包ts">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">webpack打包ts</span>
                         <span class="visible-mobile">上一篇</span>
@@ -470,7 +470,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/docs/2022/02/14/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" title="bootstrap响应式布局">
+                      <a href="/2022/02/14/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" title="bootstrap响应式布局">
                         <span class="hidden-mobile">bootstrap响应式布局</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -599,8 +599,8 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/docs/js/events.js" ></script>
-<script  src="/docs/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
@@ -622,7 +622,7 @@
 
 
   
-    <script  src="/docs/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -721,7 +721,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/docs/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -729,7 +729,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/docs/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   

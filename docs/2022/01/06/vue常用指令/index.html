@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/docs/img/userHead.png">
-  <link rel="icon" href="/docs/img/userHead.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/userHead.png">
+  <link rel="icon" href="/img/userHead.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="一、v-text 与 Mustache比较相似：都用于将数据显示在界面中（没有Mustache灵活）   二、v-html 会将string的html解析出来并进行渲染   三、v-show 用法与v-if相似，也用于决定一个元素是否渲染  1、v-if和v-show对比 v-if：当条件为false时，包含v-if指令的元素，根本就不会存在于dom中 v-show：当条件为false时，v-sh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue常用指令">
-<meta property="og:url" content="https://hanqinu.github.io/docs/2022/01/06/vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/index.html">
+<meta property="og:url" content="https://hanqinu.github.io/2022/01/06/vue%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/index.html">
 <meta property="og:site_name" content="寒沁">
 <meta property="og:description" content="一、v-text 与 Mustache比较相似：都用于将数据显示在界面中（没有Mustache灵活）   二、v-html 会将string的html解析出来并进行渲染   三、v-show 用法与v-if相似，也用于决定一个元素是否渲染  1、v-if和v-show对比 v-if：当条件为false时，包含v-if指令的元素，根本就不会存在于dom中 v-show：当条件为false时，v-sh">
 <meta property="og:locale" content="zh_CN">
@@ -80,12 +80,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/docs/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/docs/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/docs/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
@@ -94,15 +94,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"hanqinu.github.io","root":"/docs/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/docs/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"hanqinu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/docs/js/utils.js" ></script>
-  <script  src="/docs/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -119,7 +119,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/docs/">
+    <a class="navbar-brand" href="/">
       <strong>blogs</strong>
     </a>
 
@@ -138,7 +138,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -150,7 +150,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/archives/" target="_self">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -162,7 +162,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/categories/" target="_self">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -174,7 +174,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/tags/" target="_self">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -186,7 +186,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/docs/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -216,7 +216,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/docs/img/postBg.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/postBg.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -303,11 +303,11 @@
                 <h3 id="一、v-text"><a href="#一、v-text" class="headerlink" title="一、v-text"></a>一、v-text</h3><ul>
 <li>与 Mustache比较相似：都用于将数据显示在界面中（没有Mustache灵活）</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-text.png" srcset="/docs/img/loading.gif" lazyload alt="v-text"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-text.png" srcset="/img/loading.gif" lazyload alt="v-text"></p>
 <h3 id="二、v-html"><a href="#二、v-html" class="headerlink" title="二、v-html"></a>二、v-html</h3><ul>
 <li>会将string的html解析出来并进行渲染</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-html.png" srcset="/docs/img/loading.gif" lazyload alt="v-html"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-html.png" srcset="/img/loading.gif" lazyload alt="v-html"></p>
 <h3 id="三、v-show"><a href="#三、v-show" class="headerlink" title="三、v-show"></a>三、v-show</h3><ul>
 <li>用法与v-if相似，也用于决定一个元素是否渲染</li>
 </ul>
@@ -353,7 +353,7 @@
 <li>有相同父元素的子元素必须有独特的key，重复的key会造成渲染错误</li>
 <li>官方示例：<code>&lt;li v-for=&quot;item in items&quot; :key=&quot;item.id&quot;&gt;&#123;&#123; item.text &#125;&#125;&lt;/li&gt;</code></li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-for.png" srcset="/docs/img/loading.gif" lazyload alt="v-for"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-for.png" srcset="/img/loading.gif" lazyload alt="v-for"></p>
 <h3 id="八、v-on"><a href="#八、v-on" class="headerlink" title="八、v-on"></a>八、v-on</h3><ul>
 <li>绑定事件监听器</li>
 <li>语法糖 @</li>
@@ -373,20 +373,20 @@
 <li>调用event.stopPropagation()</li>
 <li>停止冒泡</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.stop.png" srcset="/docs/img/loading.gif" lazyload alt="v-on.stop"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.stop.png" srcset="/img/loading.gif" lazyload alt="v-on.stop"></p>
 <h5 id="2-2、-prevent"><a href="#2-2、-prevent" class="headerlink" title="2.2、.prevent"></a>2.2、.prevent</h5><ul>
 <li>调用event.prevenDefault</li>
 <li>阻止默认行为（如点击按钮表单自动提交）</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.prevent.png" srcset="/docs/img/loading.gif" lazyload alt="v-on.prevent"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.prevent.png" srcset="/img/loading.gif" lazyload alt="v-on.prevent"></p>
 <h5 id="2-3、-keyCode-keyAlias"><a href="#2-3、-keyCode-keyAlias" class="headerlink" title="2.3、.{keyCode | keyAlias}"></a>2.3、.{keyCode | keyAlias}</h5><ul>
 <li>只当事件是从特定键触发时才触发回调</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.keyCode.png" srcset="/docs/img/loading.gif" lazyload alt="v-on.keyCode"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.keyCode.png" srcset="/img/loading.gif" lazyload alt="v-on.keyCode"></p>
 <h5 id="2-4、-once"><a href="#2-4、-once" class="headerlink" title="2.4、.once"></a>2.4、.once</h5><ul>
 <li>只触发一次回调</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.once.png" srcset="/docs/img/loading.gif" lazyload alt="v-on.once"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-on.once.png" srcset="/img/loading.gif" lazyload alt="v-on.once"></p>
 <h5 id="2-5、-native"><a href="#2-5、-native" class="headerlink" title="2.5、.native"></a>2.5、.native</h5><ul>
 <li>监听组件根元素的原生事件，不限于click事件（例如：调用组件时，直接使用@click无法监听到点击事件）<ul>
 <li><code>&lt;cpn @click=&quot;btnClick&quot;&gt;&lt;/cpn&gt; // 无法监听click</code></li>
@@ -398,11 +398,11 @@
 <li>动态绑定数据</li>
 <li>语法糖 :</li>
 </ul>
-<h4 id="1、绑定基本属性"><a href="#1、绑定基本属性" class="headerlink" title="1、绑定基本属性"></a>1、绑定基本属性</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-base.png" srcset="/docs/img/loading.gif" lazyload alt="v-bind-base"></p>
-<h4 id="2、绑定class"><a href="#2、绑定class" class="headerlink" title="2、绑定class"></a>2、绑定class</h4><h5 id="2-1、对象语法"><a href="#2-1、对象语法" class="headerlink" title="2.1、对象语法"></a>2.1、对象语法</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-classObj.png" srcset="/docs/img/loading.gif" lazyload alt="v-bind-classObj"></p>
-<h5 id="2-2、数组语法（了解）"><a href="#2-2、数组语法（了解）" class="headerlink" title="2.2、数组语法（了解）"></a>2.2、数组语法（了解）</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-classArr.png" srcset="/docs/img/loading.gif" lazyload alt="v-bind-classArr"></p>
-<h4 id="3、绑定style"><a href="#3、绑定style" class="headerlink" title="3、绑定style"></a>3、绑定style</h4><h5 id="3-1、对象语法"><a href="#3-1、对象语法" class="headerlink" title="3.1、对象语法"></a>3.1、对象语法</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-styleObj.png" srcset="/docs/img/loading.gif" lazyload alt="v-bind-styleObj"></p>
-<h5 id="3-2、数组语法（了解）"><a href="#3-2、数组语法（了解）" class="headerlink" title="3.2、数组语法（了解）"></a>3.2、数组语法（了解）</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-styleArr.png" srcset="/docs/img/loading.gif" lazyload alt="v-bind-styleArr"></p>
+<h4 id="1、绑定基本属性"><a href="#1、绑定基本属性" class="headerlink" title="1、绑定基本属性"></a>1、绑定基本属性</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-base.png" srcset="/img/loading.gif" lazyload alt="v-bind-base"></p>
+<h4 id="2、绑定class"><a href="#2、绑定class" class="headerlink" title="2、绑定class"></a>2、绑定class</h4><h5 id="2-1、对象语法"><a href="#2-1、对象语法" class="headerlink" title="2.1、对象语法"></a>2.1、对象语法</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-classObj.png" srcset="/img/loading.gif" lazyload alt="v-bind-classObj"></p>
+<h5 id="2-2、数组语法（了解）"><a href="#2-2、数组语法（了解）" class="headerlink" title="2.2、数组语法（了解）"></a>2.2、数组语法（了解）</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-classArr.png" srcset="/img/loading.gif" lazyload alt="v-bind-classArr"></p>
+<h4 id="3、绑定style"><a href="#3、绑定style" class="headerlink" title="3、绑定style"></a>3、绑定style</h4><h5 id="3-1、对象语法"><a href="#3-1、对象语法" class="headerlink" title="3.1、对象语法"></a>3.1、对象语法</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-styleObj.png" srcset="/img/loading.gif" lazyload alt="v-bind-styleObj"></p>
+<h5 id="3-2、数组语法（了解）"><a href="#3-2、数组语法（了解）" class="headerlink" title="3.2、数组语法（了解）"></a>3.2、数组语法（了解）</h5><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-bind-styleArr.png" srcset="/img/loading.gif" lazyload alt="v-bind-styleArr"></p>
 <h3 id="十、v-model"><a href="#十、v-model" class="headerlink" title="十、v-model"></a>十、v-model</h3><h4 id="1、修饰符"><a href="#1、修饰符" class="headerlink" title="1、修饰符"></a>1、修饰符</h4><h5 id="1-1、lazy"><a href="#1-1、lazy" class="headerlink" title="1.1、lazy"></a>1.1、lazy</h5><ul>
 <li>默认情况下，v-model默认是在input事件中同步输入框的数据的，也就是说，一旦有数据发生改变对应的data中的数据就会自动发生改变</li>
 <li> lazy修饰符可以让数据在失去焦点或者回车时才会更新<br><code>&lt;input type=&quot;text&quot; v-model.lazy=&quot;message&quot;&gt;</code></li>
@@ -416,9 +416,9 @@
 </ul>
 <h4 id="2、v-model原理"><a href="#2、v-model原理" class="headerlink" title="2、v-model原理"></a>2、v-model原理</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;message&quot;</span>&gt;</span><br><span class="hljs-comment">&lt;!-- 等同于下面 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">v-bind:value</span>=<span class="hljs-string">&quot;message&quot;</span> <span class="hljs-attr">v-on:input</span>=<span class="hljs-string">&quot;message = $event.target.value&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
-<h4 id="3、v-model结合radio类型"><a href="#3、v-model结合radio类型" class="headerlink" title="3、v-model结合radio类型"></a>3、v-model结合radio类型</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88radio.png" srcset="/docs/img/loading.gif" lazyload alt="v-model结合radio"></p>
-<h4 id="4、v-model结合checkbox类型"><a href="#4、v-model结合checkbox类型" class="headerlink" title="4、v-model结合checkbox类型"></a>4、v-model结合checkbox类型</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88checkbox.png" srcset="/docs/img/loading.gif" lazyload alt="v-model结合checkbox"></p>
-<h4 id="5、v-model结合select类型"><a href="#5、v-model结合select类型" class="headerlink" title="5、v-model结合select类型"></a>5、v-model结合select类型</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88select1.png" srcset="/docs/img/loading.gif" lazyload alt="v-model结合select1"><br><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88select2.png" srcset="/docs/img/loading.gif" lazyload alt="v-model结合select2"></p>
+<h4 id="3、v-model结合radio类型"><a href="#3、v-model结合radio类型" class="headerlink" title="3、v-model结合radio类型"></a>3、v-model结合radio类型</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88radio.png" srcset="/img/loading.gif" lazyload alt="v-model结合radio"></p>
+<h4 id="4、v-model结合checkbox类型"><a href="#4、v-model结合checkbox类型" class="headerlink" title="4、v-model结合checkbox类型"></a>4、v-model结合checkbox类型</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88checkbox.png" srcset="/img/loading.gif" lazyload alt="v-model结合checkbox"></p>
+<h4 id="5、v-model结合select类型"><a href="#5、v-model结合select类型" class="headerlink" title="5、v-model结合select类型"></a>5、v-model结合select类型</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88select1.png" srcset="/img/loading.gif" lazyload alt="v-model结合select1"><br><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-model%E7%BB%93%E5%90%88select2.png" srcset="/img/loading.gif" lazyload alt="v-model结合select2"></p>
 <h3 id="十一、v-slot"><a href="#十一、v-slot" class="headerlink" title="十一、v-slot"></a>十一、v-slot</h3><h4 id="1、插槽类型"><a href="#1、插槽类型" class="headerlink" title="1、插槽类型"></a>1、插槽类型</h4><h5 id="1-1、匿名插槽（隐含name-“default”）"><a href="#1-1、匿名插槽（隐含name-“default”）" class="headerlink" title="1.1、匿名插槽（隐含name=“default”）"></a>1.1、匿名插槽（隐含name=“default”）</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">slot</span>&gt;</span>匿名插槽默认内容<span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 <h5 id="1-2、具名插槽"><a href="#1-2、具名插槽" class="headerlink" title="1.2、具名插槽"></a>1.2、具名插槽</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;top&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;bottom&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
@@ -428,7 +428,7 @@
 <ul>
 <li>作用域插槽示例：子组件中包括一组数据，比如：pLanguages: [‘JavaScript’, ‘Python’, ‘Swift’, ‘Go’, ‘C++’]，需要在多个界面进行展示（某些界面是以水平方向一一展示的，某些界面是以列表形式展示的）</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-slot1.png" srcset="/docs/img/loading.gif" lazyload alt="v-slot1"><br><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-slot2.png" srcset="/docs/img/loading.gif" lazyload alt="v-slot2"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-slot1.png" srcset="/img/loading.gif" lazyload alt="v-slot1"><br><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-slot2.png" srcset="/img/loading.gif" lazyload alt="v-slot2"></p>
 <h4 id="2、v-slot"><a href="#2、v-slot" class="headerlink" title="2、v-slot"></a>2、v-slot</h4><ul>
 <li>在vue2.6及已上版本，slot 和slot-scope已经开始废弃， 有了新的替代: v-slot，v-slot只能用在template 上，和组件标签上</li>
 <li>语法糖 #</li>
@@ -438,15 +438,15 @@
 <h3 id="十二、v-pre（不需要表达式）"><a href="#十二、v-pre（不需要表达式）" class="headerlink" title="十二、v-pre（不需要表达式）"></a>十二、v-pre（不需要表达式）</h3><ul>
 <li>v-pre用于跳过这个元素和它子元素的编译过程，用于显示原本的Mustache语法</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-pre.png" srcset="/docs/img/loading.gif" lazyload alt="v-pre"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-pre.png" srcset="/img/loading.gif" lazyload alt="v-pre"></p>
 <h3 id="十三、-v-cloak（不需要表达式）"><a href="#十三、-v-cloak（不需要表达式）" class="headerlink" title="十三、 v-cloak（不需要表达式）"></a>十三、 v-cloak（不需要表达式）</h3><ul>
 <li>这个指令保持在元素上直到关联实例结束编译（vue解析完成后，元素上的v-cloak属性消失）</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-cloak.png" srcset="/docs/img/loading.gif" lazyload alt="v-cloak"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-cloak.png" srcset="/img/loading.gif" lazyload alt="v-cloak"></p>
 <h3 id="十四、v-once（不需要表达式）"><a href="#十四、v-once（不需要表达式）" class="headerlink" title="十四、v-once（不需要表达式）"></a>十四、v-once（不需要表达式）</h3><ul>
 <li>元素和组件只渲染一次，不会随着数据的改变而改变</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-once.png" srcset="/docs/img/loading.gif" lazyload alt="v-once"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/vue/vueDirectives+computed/v-once.png" srcset="/img/loading.gif" lazyload alt="v-once"></p>
 
                 
               </div>
@@ -465,7 +465,7 @@
     
       <span class="category-chain">
         
-  <a href="/docs/categories/vue/" class="category-chain-item">vue</a>
+  <a href="/categories/vue/" class="category-chain-item">vue</a>
   
   
 
@@ -480,7 +480,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/docs/tags/vue/" class="print-no-link">#vue</a>
+        <a href="/tags/vue/" class="print-no-link">#vue</a>
       
     </div>
   
@@ -493,7 +493,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>vue常用指令</div>
-      <div>https://hanqinu.github.io/docs/2022/01/06/vue常用指令/</div>
+      <div>https://hanqinu.github.io/2022/01/06/vue常用指令/</div>
     </div>
     <div class="license-meta">
       
@@ -537,7 +537,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/docs/2022/01/06/vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7computed%E5%92%8C%E4%BE%A6%E5%90%AC%E5%99%A8watch/" title="vue计算属性computed和侦听器watch">
+                      <a href="/2022/01/06/vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7computed%E5%92%8C%E4%BE%A6%E5%90%AC%E5%99%A8watch/" title="vue计算属性computed和侦听器watch">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">vue计算属性computed和侦听器watch</span>
                         <span class="visible-mobile">上一篇</span>
@@ -547,7 +547,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/docs/2022/01/06/linux%E4%B8%AD%E5%AE%89%E8%A3%85nginx/" title="linux中安装nginx">
+                      <a href="/2022/01/06/linux%E4%B8%AD%E5%AE%89%E8%A3%85nginx/" title="linux中安装nginx">
                         <span class="hidden-mobile">linux中安装nginx</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -676,8 +676,8 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/docs/js/events.js" ></script>
-<script  src="/docs/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
@@ -699,7 +699,7 @@
 
 
   
-    <script  src="/docs/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -798,7 +798,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/docs/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -806,7 +806,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/docs/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   

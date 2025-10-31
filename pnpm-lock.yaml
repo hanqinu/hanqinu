@@ -15,8 +15,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(chokidar@3.6.0)
       hexo-generator-archive:
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^2.0.0
+        version: 2.0.0
       hexo-generator-category:
         specifier: ^2.0.0
         version: 2.0.0
@@ -451,9 +451,9 @@ packages:
     resolution: {integrity: sha512-Zm4m21coQA7TtL9JL0oNZF+ypY/HbqwVdaqGqoKD+GEV7HH2Y1YObNBgl1o/lV1tzStC8f15AoRcHdS2jiWp0w==}
     engines: {node: '>=18'}
 
-  hexo-generator-archive@1.0.0:
-    resolution: {integrity: sha512-24TeanDGpMBUIq37DHpSESQbeN6ssZ06edsGSI76tN4Yit50TgsgzP5g5DSu0yJk0jUtHJntysWE8NYAlFXibA==}
-    engines: {node: '>=8.6.0'}
+  hexo-generator-archive@2.0.0:
+    resolution: {integrity: sha512-KikJk7dGFbtNHOgqtLFGf5T/S8n1paGp+Gy0KfVDz+HKYhGbXOouyiZkmc3O9KrYt6ja14rmkMhq7KKGtvfehw==}
+    engines: {node: '>=14'}
 
   hexo-generator-category@2.0.0:
     resolution: {integrity: sha512-9OduRBf3WeRDa4BR0kAfRjOVHur7v3fm0NKAwbjUiqULigAdNZVZPO3cHKW2MlBbl/lI5PuWdhQ9zZ99CCCAgQ==}
@@ -1438,9 +1438,9 @@ snapshots:
       graceful-fs: 4.2.11
       hexo-util: 3.3.0
 
-  hexo-generator-archive@1.0.0:
+  hexo-generator-archive@2.0.0:
     dependencies:
-      hexo-pagination: 1.0.0
+      hexo-pagination: 3.0.0
 
   hexo-generator-category@2.0.0:
     dependencies:

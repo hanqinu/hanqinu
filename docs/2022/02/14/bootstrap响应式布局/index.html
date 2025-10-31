@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/userHead.png">
-  <link rel="icon" href="/img/userHead.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/docs/img/userHead.png">
+  <link rel="icon" href="/docs/img/userHead.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="一、响应式开发1、响应式开发原理 就是使用媒体查询针对不同宽度的设备进行布局和样式的设置，从而适配不同的设备   2、响应式布局容器响应式需要一个父级作为布局容器，来配合子级元素来实现变化效果。原理就是在不同屏幕下，通过媒体查询来改变布局容器的大小，再改变里面子元素的排列方式和大小，从而实现不同屏幕下，看到不同的页面布局和样式变化  二、bootstrap前端框架1、bootstrap简介boot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bootstrap响应式布局">
-<meta property="og:url" content="http://example.com/2022/02/14/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/index.html">
+<meta property="og:url" content="https://hanqinu.github.io/docs/2022/02/14/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="寒沁">
 <meta property="og:description" content="一、响应式开发1、响应式开发原理 就是使用媒体查询针对不同宽度的设备进行布局和样式的设置，从而适配不同的设备   2、响应式布局容器响应式需要一个父级作为布局容器，来配合子级元素来实现变化效果。原理就是在不同屏幕下，通过媒体查询来改变布局容器的大小，再改变里面子元素的排列方式和大小，从而实现不同屏幕下，看到不同的页面布局和样式变化  二、bootstrap前端框架1、bootstrap简介boot">
 <meta property="og:locale" content="zh_CN">
@@ -76,12 +76,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/docs/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/docs/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/docs/css/highlight-dark.css" />
   
 
 
@@ -90,15 +90,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"hanqinu.github.io","root":"/docs/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/docs/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/docs/js/utils.js" ></script>
+  <script  src="/docs/js/color-schema.js" ></script>
   
 
 
@@ -115,7 +115,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/docs/">
       <strong>blogs</strong>
     </a>
 
@@ -134,7 +134,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/docs/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -146,7 +146,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/docs/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -158,7 +158,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/docs/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -170,7 +170,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/docs/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -182,7 +182,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/docs/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -212,7 +212,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/postBg.png') no-repeat center center; background-size: cover;">
+     style="background: url('/docs/img/postBg.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -299,55 +299,55 @@
                 <h3 id="一、响应式开发"><a href="#一、响应式开发" class="headerlink" title="一、响应式开发"></a>一、响应式开发</h3><h4 id="1、响应式开发原理"><a href="#1、响应式开发原理" class="headerlink" title="1、响应式开发原理"></a>1、响应式开发原理</h4><ul>
 <li>就是使用媒体查询针对不同宽度的设备进行布局和样式的设置，从而适配不同的设备</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91%E5%8E%9F%E7%90%86.png" srcset="/img/loading.gif" lazyload alt="响应式开发原理"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91%E5%8E%9F%E7%90%86.png" srcset="/docs/img/loading.gif" lazyload alt="响应式开发原理"></p>
 <h4 id="2、响应式布局容器"><a href="#2、响应式布局容器" class="headerlink" title="2、响应式布局容器"></a>2、响应式布局容器</h4><p>响应式需要一个父级作为布局容器，来配合子级元素来实现变化效果。原理就是在不同屏幕下，通过媒体查询来改变布局容器的大小，再改变里面子元素的排列方式和大小，从而实现不同屏幕下，看到不同的页面布局和样式变化</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8.png" srcset="/img/loading.gif" lazyload alt="响应式布局容器"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8.png" srcset="/docs/img/loading.gif" lazyload alt="响应式布局容器"></p>
 <h3 id="二、bootstrap前端框架"><a href="#二、bootstrap前端框架" class="headerlink" title="二、bootstrap前端框架"></a>二、bootstrap前端框架</h3><h4 id="1、bootstrap简介"><a href="#1、bootstrap简介" class="headerlink" title="1、bootstrap简介"></a>1、bootstrap简介</h4><p>bootstrap来自twitter，是基于html、css和javascript的前端框架，它简洁灵活，使得web开发更加快捷</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap%E7%AE%80%E4%BB%8B_1.png" srcset="/img/loading.gif" lazyload alt="bootstrap简介_1"></p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap%E7%AE%80%E4%BB%8B_2.png" srcset="/img/loading.gif" lazyload alt="bootstrap简介_2"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap%E7%AE%80%E4%BB%8B_1.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap简介_1"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap%E7%AE%80%E4%BB%8B_2.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap简介_2"></p>
 <h4 id="2、bootstrap基本使用"><a href="#2、bootstrap基本使用" class="headerlink" title="2、bootstrap基本使用"></a>2、bootstrap基本使用</h4><p>bootstrap使用四部曲：</p>
 <ol>
-<li><p>创建文件夹结构<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_1.png" srcset="/img/loading.gif" lazyload alt="bootstrap_1"></p>
+<li><p>创建文件夹结构<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_1.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap_1"></p>
 </li>
-<li><p>创建html骨架结构<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_2.png" srcset="/img/loading.gif" lazyload alt="bootstrap_2"></p>
+<li><p>创建html骨架结构<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_2.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap_2"></p>
 </li>
 </ol>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span><br><span class="hljs-comment">&lt;!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bootstrap 101 Template<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- Bootstrap --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 --&gt;</span><br><span class="hljs-comment">&lt;!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 --&gt;</span><br><span class="hljs-comment">&lt;!--[if lt IE 9]&gt;</span><br><span class="hljs-comment">  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="hljs-comment">  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="hljs-comment">&lt;![endif]--&gt;</span><br></code></pre></td></tr></table></figure>
 
 <ol start="3">
-<li><p>引入相关样式文件<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_3.png" srcset="/img/loading.gif" lazyload alt="bootstrap_3"></p>
+<li><p>引入相关样式文件<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_3.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap_3"></p>
 </li>
-<li><p>书写内容<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_4.png" srcset="/img/loading.gif" lazyload alt="bootstrap_4"></p>
+<li><p>书写内容<br><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap_4.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap_4"></p>
 </li>
 </ol>
 <h4 id="3、布局容器"><a href="#3、布局容器" class="headerlink" title="3、布局容器"></a>3、布局容器</h4><p>bootstrap需要为页面内容和栅格系统包裹一个.container容器，bootstrap预先定义好了这个类，叫.container</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8.png" srcset="/img/loading.gif" lazyload alt="bootstrap布局容器"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/bootstrap%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8.png" srcset="/docs/img/loading.gif" lazyload alt="bootstrap布局容器"></p>
 <h3 id="三、bootstrap栅格系统"><a href="#三、bootstrap栅格系统" class="headerlink" title="三、bootstrap栅格系统"></a>三、bootstrap栅格系统</h3><h4 id="1、栅格系统简介"><a href="#1、栅格系统简介" class="headerlink" title="1、栅格系统简介"></a>1、栅格系统简介</h4><ul>
 <li>栅格系统是指将页面布局划分为等宽的列，然后通过列数的定义来模块化页面布局。</li>
 <li>bootstrap提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统自动分为12列</li>
 <li>bootstrap里面的container宽度是固定的，但是不同屏幕下，container的宽度不同，我们再把container划分为12等份</li>
 </ul>
-<h4 id="2、栅格选项参数"><a href="#2、栅格选项参数" class="headerlink" title="2、栅格选项参数"></a>2、栅格选项参数</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E6%A0%85%E6%A0%BC%E9%80%89%E9%A1%B9%E5%8F%82%E6%95%B0.png" srcset="/img/loading.gif" lazyload alt="栅格选项参数"></p>
+<h4 id="2、栅格选项参数"><a href="#2、栅格选项参数" class="headerlink" title="2、栅格选项参数"></a>2、栅格选项参数</h4><p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E6%A0%85%E6%A0%BC%E9%80%89%E9%A1%B9%E5%8F%82%E6%95%B0.png" srcset="/docs/img/loading.gif" lazyload alt="栅格选项参数"></p>
 <ul>
 <li>每一列默认有左右15px的padding</li>
 <li>如果孩子的份数相加等于12，则孩子能占满整个container的宽度</li>
 <li>如果孩子的份数相加小于12，则不会占满整个container的宽度，会有空白</li>
 <li>如果孩子的份数相加大于12，则超出的那一列会另起一行显示</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E6%A0%85%E6%A0%BC%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="栅格使用示例"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E6%A0%85%E6%A0%BC%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B.png" srcset="/docs/img/loading.gif" lazyload alt="栅格使用示例"></p>
 <h4 id="3、列嵌套"><a href="#3、列嵌套" class="headerlink" title="3、列嵌套"></a>3、列嵌套</h4><p>栅格系统内置的栅格系统将内容再次嵌套，简单理解就是一个列内在分成若干份小列</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%B5%8C%E5%A5%97.png" srcset="/img/loading.gif" lazyload alt="列嵌套"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%B5%8C%E5%A5%97.png" srcset="/docs/img/loading.gif" lazyload alt="列嵌套"></p>
 <ul>
 <li>列嵌套最好加一行row，这样可以取消父元素的padding值，而且高度自动和父级一样高</li>
 </ul>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%B5%8C%E5%A5%97%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="列嵌套示例"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%B5%8C%E5%A5%97%E7%A4%BA%E4%BE%8B.png" srcset="/docs/img/loading.gif" lazyload alt="列嵌套示例"></p>
 <h4 id="4、列偏移"><a href="#4、列偏移" class="headerlink" title="4、列偏移"></a>4、列偏移</h4><p>列偏移使用.col-md-offset-*类可以将列向右偏移，这些类实际是为当前元素添加了左侧的边距（margin）</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%81%8F%E7%A7%BB%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="列偏移示例"></p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%81%8F%E7%A7%BB%E7%A4%BA%E4%BE%8B%E6%95%88%E6%9E%9C.png" srcset="/img/loading.gif" lazyload alt="列偏移示例效果"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%81%8F%E7%A7%BB%E7%A4%BA%E4%BE%8B.png" srcset="/docs/img/loading.gif" lazyload alt="列偏移示例"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E5%81%8F%E7%A7%BB%E7%A4%BA%E4%BE%8B%E6%95%88%E6%9E%9C.png" srcset="/docs/img/loading.gif" lazyload alt="列偏移示例效果"></p>
 <h4 id="5、列排序"><a href="#5、列排序" class="headerlink" title="5、列排序"></a>5、列排序</h4><p>通过使用.col-md-push-*和.col-md-pull-*类就可以很容易的改变列的顺序</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E6%8E%92%E5%BA%8F.png" srcset="/img/loading.gif" lazyload alt="列排序"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%88%97%E6%8E%92%E5%BA%8F.png" srcset="/docs/img/loading.gif" lazyload alt="列排序"></p>
 <h4 id="6、响应式工具"><a href="#6、响应式工具" class="headerlink" title="6、响应式工具"></a>6、响应式工具</h4><p>为了加快对移动设备友好的页面开发工作，利用媒体查询功能，并使用这些工具类可以方便的针对不同的设备展示或隐藏页面内容</p>
-<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B7%A5%E5%85%B7.png" srcset="/img/loading.gif" lazyload alt="响应式工具"></p>
+<p><img src="https://gitee.com/huqian025/my-images/raw/master/css/bootstrap%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B7%A5%E5%85%B7.png" srcset="/docs/img/loading.gif" lazyload alt="响应式工具"></p>
 <p>与之相反的是visible-xs visible-sm visible-md visible-lg是显示某个页面内容</p>
 
                 
@@ -367,7 +367,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/css/" class="category-chain-item">css</a>
+  <a href="/docs/categories/css/" class="category-chain-item">css</a>
   
   
 
@@ -382,7 +382,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/bootstrap/" class="print-no-link">#bootstrap</a>
+        <a href="/docs/tags/bootstrap/" class="print-no-link">#bootstrap</a>
       
     </div>
   
@@ -395,7 +395,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>bootstrap响应式布局</div>
-      <div>http://example.com/2022/02/14/bootstrap响应式布局/</div>
+      <div>https://hanqinu.github.io/docs/2022/02/14/bootstrap响应式布局/</div>
     </div>
     <div class="license-meta">
       
@@ -439,7 +439,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/02/24/ts%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="ts数据类型">
+                      <a href="/docs/2022/02/24/ts%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="ts数据类型">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">ts数据类型</span>
                         <span class="visible-mobile">上一篇</span>
@@ -449,7 +449,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/02/14/rem%E9%80%82%E9%85%8D%E5%B8%83%E5%B1%80/" title="rem适配布局">
+                      <a href="/docs/2022/02/14/rem%E9%80%82%E9%85%8D%E5%B8%83%E5%B1%80/" title="rem适配布局">
                         <span class="hidden-mobile">rem适配布局</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -578,8 +578,8 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/docs/js/events.js" ></script>
+<script  src="/docs/js/plugins.js" ></script>
 
 
   <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
@@ -601,7 +601,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/docs/js/img-lazyload.js" ></script>
   
 
 
@@ -700,7 +700,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/docs/js/local-search.js" ></script>
 
 
 
@@ -708,7 +708,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/docs/js/boot.js" ></script>
 
 
   

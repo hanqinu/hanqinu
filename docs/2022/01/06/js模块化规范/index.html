@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/userHead.png">
-  <link rel="icon" href="/img/userHead.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/docs/img/userHead.png">
+  <link rel="icon" href="/docs/img/userHead.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <meta name="description" content="一、入门介绍1、什么是模块&#x2F;模块化 将一个复杂的程序依据一定的规则（规范）封装成几个块（文件），并进行组合在一起 块的内部数据&#x2F;实现是私有的，只是向外部暴露一些接口（方法）与其他外部模块通信  2、为什么要模块化 降低复杂度 提高解耦性（降低耦合度） 部署方便（功能点明确）  3、模块化的好处 避免命名冲突（减少命名空间污染） 更好的分离，按需加载 更高复用性 高可维护性  4、页面引入加载scr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js模块化规范">
-<meta property="og:url" content="http://example.com/2022/01/06/js%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/index.html">
+<meta property="og:url" content="https://hanqinu.github.io/docs/2022/01/06/js%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/index.html">
 <meta property="og:site_name" content="寒沁">
 <meta property="og:description" content="一、入门介绍1、什么是模块&#x2F;模块化 将一个复杂的程序依据一定的规则（规范）封装成几个块（文件），并进行组合在一起 块的内部数据&#x2F;实现是私有的，只是向外部暴露一些接口（方法）与其他外部模块通信  2、为什么要模块化 降低复杂度 提高解耦性（降低耦合度） 部署方便（功能点明确）  3、模块化的好处 避免命名冲突（减少命名空间污染） 更好的分离，按需加载 更高复用性 高可维护性  4、页面引入加载scr">
 <meta property="og:locale" content="zh_CN">
@@ -62,12 +62,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/docs/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/docs/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/docs/css/highlight-dark.css" />
   
 
 
@@ -76,15 +76,15 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"hanqinu.github.io","root":"/docs/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null},"gtag":null,"woyaola":null,"cnzz":null},"search_path":"/docs/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/docs/js/utils.js" ></script>
+  <script  src="/docs/js/color-schema.js" ></script>
   
 
 
@@ -101,7 +101,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/docs/">
       <strong>blogs</strong>
     </a>
 
@@ -120,7 +120,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/docs/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -132,7 +132,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/docs/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -144,7 +144,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/docs/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -156,7 +156,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/docs/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -168,7 +168,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/docs/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -198,7 +198,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/postBg.png') no-repeat center center; background-size: cover;">
+     style="background: url('/docs/img/postBg.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -362,7 +362,7 @@
 <li>说明：专门用于浏览器端，模块的加载是异步的，模块使用时才会加载执行</li>
 <li>基本语法：<ul>
 <li>定义暴露模块、引入使用模块</li>
-<li><img src="https://gitee.com/huqian025/my-images/raw/master/js/js%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/CMD.png" srcset="/img/loading.gif" lazyload></li>
+<li><img src="https://gitee.com/huqian025/my-images/raw/master/js/js%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/CMD.png" srcset="/docs/img/loading.gif" lazyload></li>
 </ul>
 </li>
 </ul>
@@ -403,7 +403,7 @@
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// module1.js</span><br><span class="hljs-comment">// 常规暴露-分别暴露</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;foo() module1&#x27;</span>)<br>&#125;<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">bar</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;bar() module1&#x27;</span>)<br>&#125;<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]<br><br><span class="hljs-comment">// module2.js</span><br><span class="hljs-comment">// 常规暴露-统一暴露</span><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">fun</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;fun() module2&#x27;</span>)<br>&#125;<br><span class="hljs-keyword">function</span> <span class="hljs-title function_">fun2</span> (<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;fun2() module2&#x27;</span>)<br>&#125;<br><span class="hljs-keyword">export</span> &#123;fun, fun2&#125;<br><br><span class="hljs-comment">// module3.js</span><br><span class="hljs-comment">// 默认暴露，可以暴露任意数据类型，暴露什么数据接收到的就是什么数据</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>  <span class="hljs-attr">msg</span>: <span class="hljs-string">&#x27;默认暴露&#x27;</span>,<br>  <span class="hljs-title function_">foo</span> () &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">msg</span>)<br>  &#125;<br>&#125;<br><br><span class="hljs-comment">// main.js</span><br><span class="hljs-comment">// 引入模块</span><br><span class="hljs-comment">// 常规暴露必须使用解构赋值的形式引入</span><br><span class="hljs-keyword">import</span> &#123;foo, bar&#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./module1&#x27;</span><br><span class="hljs-keyword">import</span> &#123; fun, fun2 &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./module2&#x27;</span><br><span class="hljs-comment">// 默认暴露直接引入</span><br><span class="hljs-keyword">import</span> module3 <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./module3&#x27;</span><br><span class="hljs-comment">// 引入第三方库类似默认暴露，以jquery为例</span><br><span class="hljs-keyword">import</span> $ <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;jquery&#x27;</span><br>$(<span class="hljs-string">&#x27;body&#x27;</span>).<span class="hljs-title function_">css</span>(<span class="hljs-string">&#x27;background&#x27;</span>, <span class="hljs-string">&#x27;green&#x27;</span>)<br><span class="hljs-title function_">foo</span>()<br><span class="hljs-title function_">bar</span>()<br><span class="hljs-title function_">fun</span>()<br><span class="hljs-title function_">fun2</span>()<br>module3.<span class="hljs-title function_">foo</span>()<br><br><span class="hljs-comment">// html中引入</span><br>&lt;!-- 引入通过babel和browserify打包处理后的js文件 --&gt;<br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;./js/dist/bundle.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
 
-<h3 id="三、ES6引入export-default导出的模块，不使用"><a href="#三、ES6引入export-default导出的模块，不使用" class="headerlink" title="三、ES6引入export default导出的模块，不使用{}"></a>三、ES6引入export default导出的模块，不使用{}</h3><p><img src="https://gitee.com/huqian025/my-images/raw/master/js/js%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/ES6%E4%BD%BF%E7%94%A8%E9%BB%98%E8%AE%A4%E5%AF%BC%E5%87%BA%E6%A8%A1%E5%9D%97.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="三、ES6引入export-default导出的模块，不使用"><a href="#三、ES6引入export-default导出的模块，不使用" class="headerlink" title="三、ES6引入export default导出的模块，不使用{}"></a>三、ES6引入export default导出的模块，不使用{}</h3><p><img src="https://gitee.com/huqian025/my-images/raw/master/js/js%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/ES6%E4%BD%BF%E7%94%A8%E9%BB%98%E8%AE%A4%E5%AF%BC%E5%87%BA%E6%A8%A1%E5%9D%97.png" srcset="/docs/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -422,7 +422,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/js/" class="category-chain-item">js</a>
+  <a href="/docs/categories/js/" class="category-chain-item">js</a>
   
   
 
@@ -437,9 +437,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/js/" class="print-no-link">#js</a>
+        <a href="/docs/tags/js/" class="print-no-link">#js</a>
       
-        <a href="/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/" class="print-no-link">#模块化</a>
+        <a href="/docs/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/" class="print-no-link">#模块化</a>
       
     </div>
   
@@ -452,7 +452,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>js模块化规范</div>
-      <div>http://example.com/2022/01/06/js模块化规范/</div>
+      <div>https://hanqinu.github.io/docs/2022/01/06/js模块化规范/</div>
     </div>
     <div class="license-meta">
       
@@ -496,7 +496,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/01/06/js%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/" title="js数组中的高阶函数">
+                      <a href="/docs/2022/01/06/js%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/" title="js数组中的高阶函数">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">js数组中的高阶函数</span>
                         <span class="visible-mobile">上一篇</span>
@@ -506,7 +506,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/01/06/ajax%E5%9F%BA%E7%A1%80/" title="ajax基础">
+                      <a href="/docs/2022/01/06/ajax%E5%9F%BA%E7%A1%80/" title="ajax基础">
                         <span class="hidden-mobile">ajax基础</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -635,8 +635,8 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/docs/js/events.js" ></script>
+<script  src="/docs/js/plugins.js" ></script>
 
 
   <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
@@ -658,7 +658,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/docs/js/img-lazyload.js" ></script>
   
 
 
@@ -757,7 +757,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/docs/js/local-search.js" ></script>
 
 
 
@@ -765,7 +765,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/docs/js/boot.js" ></script>
 
 
   

@@ -1,3 +1,3 @@
-# wozhixianghaohaoxuexi.github.io
+# hanqinu.github.io
 blogs
 Hexo框架构建的博客
